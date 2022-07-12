@@ -1,20 +1,19 @@
 {
-  "name": "01-api-next",
+  "name": "events-udemy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2"
+    "firebase": "^9.8.4",
+    "install": "^0.13.0",
+    "next": "^10.2.3",
+    "npm": "^8.12.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^0.5.7"
   }
 }
