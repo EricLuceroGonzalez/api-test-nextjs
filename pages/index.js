@@ -5,6 +5,7 @@ import { getDatabase,   child,get, ref, onValue} from "firebase/database";
 import {database, appCheck} from '../firebase'
 import useSWR from 'swr'
 import { useEffect, useState } from "react";
+import NewsletterRegistration from "../components/inputs/newsletter-registration";
 // import { getFeaturedEvents } from "../dummy-data";
 
 function HomePage(params) {
@@ -53,6 +54,7 @@ const [events, setEvents] = useState({})
           content="Find a lot of events you will be interested."
         />
       </Head>
+      <NewsletterRegistration/>
       <EventList items={params.events} />
     </div>
   );
