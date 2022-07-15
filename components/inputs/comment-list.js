@@ -1,21 +1,20 @@
-import classes from './comment-list.module.css';
+import { useEffect, useState } from "react";
+import classes from "./comment-list.module.css";
 
-function CommentList() {
+function CommentList(props) {
+  const { allComments } = props;
+
   return (
     <ul className={classes.comments}>
-      {/* Render list of comments - fetched from API */}
-      <li>
-        <p>My comment is amazing!</p>
-        <div>
-          By <address>Maximilian</address>
-        </div>
+      {allComments.map((item) =>
+        <li key={item.id}>
+          <p>{item.text}</p>
+      
+          <div>
+            By <address>{item.name}</address>
+          </div>
       </li>
-      <li>
-        <p>My comment is amazing!</p>
-        <div>
-          By <address>Maximilian</address>
-        </div>
-      </li>
+      )} 
     </ul>
   );
 }
