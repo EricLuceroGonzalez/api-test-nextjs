@@ -5,7 +5,7 @@ import { NotificationContextProvider } from "../store/notification-context";
 
 function MyApp({ Component, pageProps }) {
   return (
-    // <NotificationContextProvider>
+    <NotificationContextProvider>
     <LayoutComponent>
       <Head>
         <title>My Events App</title>
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
     </LayoutComponent>
-    // </NotificationContextProvider>
+     </NotificationContextProvider>
   );
 }
 
