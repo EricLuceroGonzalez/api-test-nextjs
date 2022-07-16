@@ -10,6 +10,7 @@
   "dependencies": {
     "firebase": "^9.8.4",
     "install": "^0.13.0",
+    "mongodb": "^4.8.0",
     "next": "^10.2.3",
     "npm": "^8.12.1",
     "react": "17.0.2",

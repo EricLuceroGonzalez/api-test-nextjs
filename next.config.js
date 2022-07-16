@@ -11,7 +11,9 @@ module.exports = {
       databaseURL: process.env.DB_URL,
       databaseCAPTCHAHTML: process.env.DB_CAPTCHA_HTML,
       databaseCAPTCHA: process.env.DB_CAPTCHA_PROVIDER,
-      FirebaseToken: process.env.APP_CHECK_DEBUG_TOKEN_FROM_CI
+      FirebaseToken: process.env.APP_CHECK_DEBUG_TOKEN_FROM_CI,
+      databaseName: process.env.DB_MONGO_USER,
+      databasePass: process.env.DB_MONGO_PASS
     },
   }
   
